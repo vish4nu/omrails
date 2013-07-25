@@ -1,0 +1,37 @@
+$baseFontFamily: Oxygen;
+@import url(http:fonts.googleapis.com/css?family=Oxygen);
+
+/*imports and uses new font*/
+
+$navbarBackgroundHighlight: white;
+$navbarBackground: white;
+$navbarBrandColor: orange;
+/*changes nav bar colors*/
+
+@import 'bootstrap';
+
+body {
+	padding-top: 60px;
+	padding-left:20px;
+	padding-right:20px;
+	/* changes spacing of body within the website to prevent it 
+	from sticking to edges*/
+}
+
+@import 'bootstrap-responsive';
+
+.navbar-inner{
+	@include box-shadow(none !important);
+	border: 0;
+	/* removes the line under the navbar by overiding some of 
+	bootstrap's inbuilt code */
+}
+
+.footer {
+	margin-top: 50px;
+	color: $grayLight;
+	a{
+		color:$gray;
+		/* changes color and adds padding to footer*/
+	}
+}
