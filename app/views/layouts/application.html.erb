@@ -10,8 +10,13 @@
 		<%= render 'layouts/header' %>
 
 		<div class"container-fluid">
-			<%= yield %>	
+			<!-- enables flash messages in my body?? -->
+			<% flash.each do |name, msg| %>
+				<%= content_tag(:div, msg, class: "alert alert-#{name}") %>
+			<% end %>
+    		<%= yield %>	
 			<%= render 'layouts/footer' %>
+      <!--Body content-->			
 		</div>
 	</body>
 </html>
