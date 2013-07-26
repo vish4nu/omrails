@@ -22,6 +22,5 @@ end
 
 gem 'jquery-rails'
 gem 'devise'
-gem 'protected_attributes' '>= 3.2.12'
 
 
