@@ -1,0 +1,14 @@
+<div class="row"> <!-- assigns text to a row -->
+	<div class="span6 offset3"> <!-- inserts text in a row size 6 that is offset by 3 -->
+		<div class="well well-small"> <!-- inserts gray box around text -->
+			<p>
+			  <%= @pin.description %>
+			  <!-- pulls description data from pin model -->
+			</p>
+			<p><%= link_to 'Edit', edit_pin_path(@pin) %> |
+			  <%= link_to 'Back', pins_path %></p>
+		</div>
+	</div>
+</div>
+
+
