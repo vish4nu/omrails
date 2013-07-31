@@ -8,4 +8,5 @@ class User < ActiveRecord::Base
 	attr_accessible :email, :password, :password_confirmation, :name,
 	:remember_me, :provider, :uid, :as => [:default, :admin]
 
+	has_many :pins
 end

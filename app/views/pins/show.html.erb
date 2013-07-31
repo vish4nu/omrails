@@ -5,8 +5,13 @@
 			  <%= @pin.description %>
 			  <!-- pulls description data from pin model -->
 			</p>
-			<p><%= link_to 'Edit', edit_pin_path(@pin) %> |
-			  <%= link_to 'Back', pins_path %></p>
+			<p>
+				<%= @pin.user.name %>
+			</p>
+			<% if current_user == @pin.user %>
+				<p><%= link_to 'Edit', edit_pin_path(@pin) %> |
+				  <%= link_to 'Back', pins_path %></p>
+			<% end %>	  
 		</div>
 	</div>
 </div>
