@@ -1,6 +1,7 @@
 <div class="row"> <!-- assigns text to a row -->
 	<div class="span6 offset3"> <!-- inserts text in a row size 6 that is offset by 3 -->
 		<div class="well well-small"> <!-- inserts gray box around text -->
+			<%= image_tag @pin.image %>
 			<p>
 			  <%= @pin.description %>
 			  <!-- pulls description data from pin model -->
