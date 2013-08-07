@@ -14,7 +14,8 @@ body {
 	padding-top: 60px;
 	padding-left:20px;
 	padding-right:20px;
-	padding-bottom:60px;   /* Height of the footer */
+	padding-bottom:60px; 
+	position:absolute;  /* Height of the footer */
 	/* changes spacing of body within the website to prevent it 
 	from sticking to edges*/
 }
@@ -28,7 +29,7 @@ body {
 	}
 
 .footer {
-	margin-top: 50px;
+	margin-top: -60px;
 	position:absolute;
    	bottom:0;
    	width:100%;
