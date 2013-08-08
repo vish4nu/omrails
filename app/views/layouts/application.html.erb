@@ -14,9 +14,10 @@
 			<% flash.each do |name, msg| %>
 				<%= content_tag(:div, msg, class: "alert alert-#{name}") %>
 			<% end %>
-    		<%= yield %>
-  			<!--Body content-->	
-    	<%= render 'layouts/footer' %>
+    		<%= yield %><!--Body content-->	
+    		<%= render 'layouts/footer' %>
+  			
+    	
     		
 		</div>
 

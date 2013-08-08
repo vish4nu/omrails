@@ -3,9 +3,9 @@ $baseFontFamily: Oxygen;
 
 /*imports and uses new font*/
 
-$navbarBackgroundHighlight: white;
-$navbarBackground: white;
-$navbarBrandColor: orange;
+$navbarBackgroundHighlight: DarkOliveGreen;
+$navbarBackground: White;
+$navbarBrandColor: black;
 /*changes nav bar colors*/
 
 @import 'bootstrap';
@@ -21,12 +21,19 @@ body {
 }
 @import 'bootstrap-responsive';
 
-.navbar-inner{
+.navbar-inner .navbar {
 	@include box-shadow(none !important);
 	border: 0;
 	/* removes the line under the navbar by overiding some of 
 	bootstrap's inbuilt code */
 	}
+
+.navbar .nav .active > a, .navbar .nav .active > a:hover {
+    background-color: #c79810;
+    }
+ .navbar .nav > li > a {
+   	color: black;
+    }
 
 .footer {
 	margin-top: -60px;
