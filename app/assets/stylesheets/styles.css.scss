@@ -72,3 +72,20 @@ body {
 .description {
 	margin: 10px 0 5px;
 }
+
+.brand {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.brand:hover {
+  color: #fff;
+  text-decoration: none;
+}
